@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>বাংলা নিউজ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'SolaimanLipi', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #b71c1c;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #d32f2f;
+      overflow: auto;
+      white-space: nowrap;
+    }
+
+    nav a {
+      display: inline-block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #b71c1c;
+    }
+
+    .breaking-news {
+      background: #ffeb3b;
+      color: #d32f2f;
+      padding: 10px;
+      font-weight: bold;
+      overflow: hidden;
+    }
+
+    .breaking-news marquee {
+      font-size: 16px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .main {
+      flex: 2;
+      padding-right: 20px;
+    }
+
+    .sidebar {
+      flex: 1;
+    }
+
+    article {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    article img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+
+    .sidebar h3 {
+      background-color: #d32f2f;
+      color: white;
+      padding: 10px;
+      border-radius: 5px 5px 0 0;
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      background-color: white;
+      padding: 10px;
+      list-style-type: none;
+      margin: 0;
+      border-radius: 0 0 5px 5px;
+    }
+
+    .sidebar li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .sidebar li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    footer {
+      background-color: #b71c1c;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .main, .sidebar {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>বাংলা নিউজ</h1>
+    <p>আপনার প্রতিদিনের বিশ্বস্ত সংবাদ উৎস</p>
+  </header>
+
+  <div style="text-align: center; margin: 20px 0;">
+    <!-- Header Ad -->
+    <img src="https://via.placeholder.com/728x90?text=Header+Ad" alt="Ad Banner">
+  </div>
+
+  <nav>
+    <a href="#">প্রথম পাতা</a>
+    <a href="#">জাতীয়</a>
+    <a href="#">রাজনীতি</a>
+    <a href="#">আন্তর্জাতিক</a>
+    <a href="#">খেলাধুলা</a>
+    <a href="#">বিনোদন</a>
+    <a href="#">প্রযুক্তি</a>
+  </nav>
+
+  <div class="breaking-news">
+    <marquee behavior="scroll" direction="left">ব্রেকিং: আজ রাতে ভারি বৃষ্টির সম্ভাবনা... | রাজধানীতে যানজট তীব্র... | নতুন বাজেট ঘোষণা কাল...</marquee>
+  </div>
+
+  <div class="container">
+    <div class="main">
+      <article>
+        <img src="https://via.placeholder.com/800x400" alt="সংবাদ ছবি">
+        <h2>আজকের শীর্ষ সংবাদ</h2>
+        <p>ঢাকায় আজ সকাল থেকে ভারি বৃষ্টি, ফলে যানজটে দুর্ভোগে পড়েছে নগরবাসী...</p>
+      </article>
+
+      <div style="text-align: center; margin: 30px 0;">
+        <!-- In-Article Ad -->
+        <img src="https://via.placeholder.com/600x100?text=Article+Ad" alt="Article Ad">
+      </div>
+
+      <article>
+        <img src="https://via.placeholder.com/800x400" alt="সংবাদ ছবি">
+        <h2>রাজনীতির উত্তেজনা</h2>
+        <p>নির্বাচন সামনে রেখে রাজনৈতিক দলের মধ্যে তীব্র প্রতিযোগিতা শুরু হয়েছে...</p>
+      </article>
+    </div>
+
+    <div class="sidebar">
+      <div style="text-align: center; margin: 20px 0;">
+        <!-- Sidebar Ad -->
+        <img src="https://via.placeholder.com/300x250?text=Sidebar+Ad" alt="Sidebar Ad">
+      </div>
+
+      <h3>সর্বাধিক পঠিত</h3>
+      <ul>
+        <li><a href="#">প্রধানমন্ত্রীর নতুন ঘোষণা</a></li>
+        <li><a href="#">অর্থনীতির হালচাল</a></li>
+        <li><a href="#">বিশ্বকাপে বাংলাদেশের জয়</a></li>
+        <li><a href="#">ঢাকায় ভূমিকম্প অনুভূত</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; ২০২৫ বাংলা নিউজ | সর্বস্বত্ব সংরক্ষিত
+  </footer>
+
+</body>
+</html>
